@@ -57,8 +57,8 @@ describe("About Arrays", function() {
 
         expect(array.slice(0, 1).toString()).to.equal('peanut');
         expect(array.slice(0, 2).toString()).to.equal('peanut', 'butter');
-        expect(array.slice(2, 2).toString()).to.equal('and' 'jelly');
-        expect(array.slice(2, 20).toString()).to.equal('and' 'jelly');
+        expect(array.slice(2, 2).toString()).to.equal('and', 'jelly');
+        expect(array.slice(2, 20).toString()).to.equal('and', 'jelly');
         expect(array.slice(3, 0).toString()).to.equal('');
         expect(array.slice(3, 100).toString()).to.equal('jelly');
         expect(array.slice(5, 1).toString()).to.equal('');
@@ -79,7 +79,7 @@ describe("About Arrays", function() {
 
         var copyOfArray = array.slice();
         copyOfArray[3] = "changed in copyOfArray";
-        expect(array[3]).to.equal({'one','two','three','four','five'});
+        expect(array[3]).to.equal(['one','two','three','four','five']);
     });
 
     it("should push and pop", function() {
